@@ -23,7 +23,7 @@ BuildRequires:	pkgconfig(gthread-2.0)
 
 BuildRequires:	pkgconfig(glib-2.0) >= 2.44
 BuildRequires:	pkgconfig(gtk+-3.0) >= 3.16
-BuildRequires:	pkgconfig(gtksourceview-3.0) >= 3.16
+BuildRequires:	pkgconfig(gtksourceview-4)
 BuildRequires:	pkgconfig(libxml-2.0) >= 2.5.0
 BuildRequires:	pkgconfig(iso-codes) >= 0.35
 BuildRequires:	pkgconfig(vapigen)
