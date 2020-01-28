@@ -8,7 +8,7 @@
 
 Summary:	A flexible API to implement spell checking in a GTK+ application
 Name:		gspell
-Version:	1.8.2
+Version:	1.8.3
 Release:	1
 Source0:	https://download.gnome.org/sources/%name/%{url_ver}/%{name}-%{version}.tar.xz
 License:	GPLv2+
