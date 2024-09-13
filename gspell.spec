@@ -92,7 +92,7 @@ find %{buildroot} -name '*.la' -delete
 %find_lang %{name}-%{api}
 
 %files i18n -f %{name}-%{api}.lang
-%doc README AUTHORS
+%doc AUTHORS
 
 %files -n %libname
 %{_libdir}/libgspell-%{api}.so.%{major}{,.*}
