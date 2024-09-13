@@ -8,12 +8,13 @@
 
 Summary:	A flexible API to implement spell checking in a GTK+ application
 Name:		gspell
-Version:	1.12.2
-Release:	4
+Version:	1.14.0
+Release:	1
 Source0:	https://download.gnome.org/sources/%name/%{url_ver}/%{name}-%{version}.tar.xz
 License:	GPLv2+
 Group:		Development/Other
 Url:		https://wiki.gnome.org/Projects/gspell
+BuildRequires:  meson
 BuildRequires:	pkgconfig(dbus-1)
 BuildRequires:	pkgconfig(dbus-glib-1)
 BuildRequires:	pkgconfig(gdk-3.0)
@@ -80,11 +81,11 @@ application.
 %autosetup
 
 %build
-%configure --enable-gtk-doc --disable-static
-%make_build
+%meson
+%meson_build
 
 %install
-%make_install
+%meson_install
 
 find %{buildroot} -name '*.la' -delete
 
