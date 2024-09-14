@@ -81,7 +81,9 @@ application.
 %autosetup
 
 %build
-%meson
+%meson \
+       -Dtests=false \
+       -Dinstall_tests=false
 %meson_build
 
 %install
@@ -98,6 +100,7 @@ find %{buildroot} -name '*.la' -delete
 %{_libdir}/libgspell-%{api}.so.%{major}{,.*}
 
 %files -n %develname
+%doc %{_datadir}/gtk-doc/html/gspell-1/
 %{_bindir}/gspell-app1
 %{_libdir}/lib%{name}-%{api}.so
 %{_libdir}/pkgconfig/%{name}-%{api}.pc
