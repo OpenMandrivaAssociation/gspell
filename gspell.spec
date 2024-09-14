@@ -98,12 +98,10 @@ find %{buildroot} -name '*.la' -delete
 %{_libdir}/libgspell-%{api}.so.%{major}{,.*}
 
 %files -n %develname
-%doc ChangeLog
 %{_bindir}/gspell-app1
 %{_libdir}/lib%{name}-%{api}.so
 %{_libdir}/pkgconfig/%{name}-%{api}.pc
 %{_includedir}/%{name}-%{api}
-%{_datadir}/gtk-doc/html/%{name}-1.0
 %{_datadir}/vala/vapi/%{name}-%{api}.deps
 %{_datadir}/vala/vapi/%{name}-%{api}.vapi
 %{_datadir}/gir-1.0/Gspell-%{api}.gir
