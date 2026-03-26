@@ -8,8 +8,8 @@
 
 Summary:	A flexible API to implement spell checking in a GTK+ application
 Name:		gspell
-Version:	1.14.2
-Release:	2
+Version:	1.14.3
+Release:	1
 #Source0:	https://download.gnome.org/sources/%name/%{url_ver}/%{name}-%{version}.tar.xz
 Source0:       https://gitlab.gnome.org/GNOME/gspell/-/archive/%{version}/gspell-%{version}.tar.bz2
 License:	GPLv2+
@@ -26,7 +26,7 @@ BuildRequires:	pkgconfig(gthread-2.0)
 BuildRequires:	pkgconfig(glib-2.0) >= 2.44
 BuildRequires:	pkgconfig(gtk+-3.0) >= 3.16
 BuildRequires:	pkgconfig(gtksourceview-4)
-BuildRequires:	pkgconfig(libxml-2.0) >= 2.5.0
+BuildRequires:	pkgconfig(libxml-2.0) >= 2.15.2
 BuildRequires:	pkgconfig(iso-codes) >= 0.35
 BuildRequires:	pkgconfig(vapigen)
 BuildRequires:	pkgconfig(enchant-2)
